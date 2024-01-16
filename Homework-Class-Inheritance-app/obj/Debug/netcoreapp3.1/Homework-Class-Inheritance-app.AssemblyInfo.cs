@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Homework-Class-Inheritance-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7c7939d0198cd0527cc4d3a5843ceda9c4679a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ac0d7c557980eced36eedf63979b75a88f2b37d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Homework-Class-Inheritance-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Homework-Class-Inheritance-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

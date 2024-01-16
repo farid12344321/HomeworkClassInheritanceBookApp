@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Homework_Class_Inheritance_app
@@ -66,7 +67,7 @@ namespace Homework_Class_Inheritance_app
                         Console.WriteLine("Kitabin Genre");
                         string genre = Console.ReadLine();
 
-                        Book books = new Book(bookName, bookPrice, genre);
+                        Book books = new Book(FixNameFormat(bookName), bookPrice, genre);
                         library.AddBook(books);
                         Console.WriteLine("Yaradildi");
                         break;
@@ -91,6 +92,24 @@ namespace Homework_Class_Inheritance_app
                         break;
                 }
             } while (opt != "0");
+        }
+
+        static string FixNameFormat(string bookName)
+        {
+            bookName = bookName.Trim();
+            string[] words = bookName.Split(' ');
+
+            StringBuilder nameBuilder = new StringBuilder();
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i] != "")
+                {
+                    nameBuilder.Append(words[i] + " ");
+                }
+            }
+
+            return nameBuilder.ToString().TrimEnd();
         }
     }
 }

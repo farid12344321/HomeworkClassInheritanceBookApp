@@ -65,6 +65,20 @@ namespace Homework_Class_Inheritance_app
                 }
             }
             Books = books;
+
+            //int wantedIndex = FindBookByName(name);
+
+            //if (wantedIndex == -1) return false;
+
+            //for (int i = wantedIndex; i < Books.Length - 1; i++)
+            //{
+            //    var temp = Books[i];
+            //    Books[i] = Books[i + 1];
+            //    Books[i + 1] = temp;
+            //}
+
+            //Array.Resize(ref Books, Books.Length - 1);
+            //return true;
         }
 
     }
